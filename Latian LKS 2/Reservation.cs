@@ -15,7 +15,7 @@ namespace Latian_LKS_2
     {
         SqlConnection connection = new SqlConnection(Connection.connectionString);
         SqlDataAdapter adapter;
-        DataTable dtCustomer, dtItem, dtAvailable, dtRoomType, dt;
+        DataTable dtCustomer, dtItem, dtAvailable, dtRoomType;
         SqlCommand cmd;
         SqlDataReader reader;
         int totalPrice, priceRoom, priceItem;
@@ -340,7 +340,7 @@ namespace Latian_LKS_2
 
                         for (int i = 1; i <= gridSelected.RowCount; i++ )
                         {
-                            int idRoom = Convert.ToInt32(gridSelected.Rows[i - 1].Cells[6].Value);
+                            int idRoom = Convert.ToInt32(gridSelected.Rows[i - 1].Cells[0].Value);
                             cmd = new SqlCommand("INSERT INTO ReservationRoom VALUES(" + idReservation + ", " + idRoom + ", '" + dateTimePicker.Value + "', " + Convert.ToInt32(textBoxStay.Text) + ", " + Convert.ToInt32(gridSelected.Rows[i - 1].Cells[5].Value) + ", '" + dateTimePicker.Value + "', '" + dateTimePicker1.Value + "')", connection);
                             cmd.ExecuteNonQuery();
                         }
