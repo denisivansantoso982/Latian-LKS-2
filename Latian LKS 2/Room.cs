@@ -83,6 +83,13 @@ namespace Latian_LKS_2
                 gridRoom.Columns[4].Visible = false;
                 gridRoom.Columns[6].Visible = false;
 
+                gridRoom.Columns[2].CellTemplate.Style.Alignment = DataGridViewContentAlignment.MiddleRight;
+                gridRoom.Columns[3].CellTemplate.Style.Alignment = DataGridViewContentAlignment.MiddleRight;
+
+                gridRoom.Columns[2].HeaderText = "Room Number";
+                gridRoom.Columns[3].HeaderText = "Room Floor";
+                gridRoom.Columns[5].HeaderText = "Room Price";
+
                 gridRoom.Columns[5].CellTemplate.Style.Alignment = DataGridViewContentAlignment.MiddleRight;
                 gridRoom.Columns[5].CellTemplate.Style.Font = new Font(gridRoom.Font, FontStyle.Bold);
 

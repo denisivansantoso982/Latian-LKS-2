@@ -56,6 +56,9 @@ namespace Latian_LKS_2
                 gridItem.DataSource = dt;
                 gridItem.Columns[0].Visible = false;
 
+                gridItem.Columns[2].HeaderText = "Request Price";
+                gridItem.Columns[3].HeaderText = "Compensation Fee";
+
                 gridItem.Columns[2].CellTemplate.Style.Alignment = DataGridViewContentAlignment.MiddleRight;
                 gridItem.Columns[2].CellTemplate.Style.Font = new Font(gridItem.Font, FontStyle.Bold);
                 gridItem.Columns[3].CellTemplate.Style.Alignment = DataGridViewContentAlignment.MiddleRight;

@@ -62,6 +62,9 @@ namespace Latian_LKS_2
                 gridRoomType.Columns[4].Visible = false;
                 gridRoomType.Columns[5].Visible = false;
 
+                gridRoomType.Columns[3].HeaderText = "Room Price";
+
+                gridRoomType.Columns[2].CellTemplate.Style.Alignment = DataGridViewContentAlignment.MiddleRight;
                 gridRoomType.Columns[3].CellTemplate.Style.Alignment = DataGridViewContentAlignment.MiddleRight;
                 gridRoomType.Columns[3].CellTemplate.Style.Font = new Font(gridRoomType.Font, FontStyle.Bold);
 
@@ -218,6 +221,12 @@ namespace Latian_LKS_2
             DataView dv = new DataView(dt);
             dv.RowFilter = String.Format("Name LIKE '%{0}%'", textBox3.Text);
             gridRoomType.DataSource = dv;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string[] data = textBox1.Text.Split(' ');
+
         }
 
         bool validation()
