@@ -77,5 +77,10 @@ namespace Latian_LKS_2
             Room room = new Room();
             room.ShowDialog();
         }
+
+        private void Admin_Paint(object sender, PaintEventArgs e)
+        {
+            GradientModel.gradientColor(this.ClientRectangle, e);
+        }
     }
 }

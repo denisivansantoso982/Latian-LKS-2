@@ -8,6 +8,6 @@ namespace Latian_LKS_2
 {
     class Connection
     {
-        public static string connectionString = @"Data Source=DENISIVANSANTOS;Initial Catalog=HotelLagi;Integrated Security=True";
+        public static string connectionString = @"Data Source=LAPTOP-QK9HLMP4\HOYIRULSQL;Initial Catalog=HotelLagi;Integrated Security=True";
     }
 }

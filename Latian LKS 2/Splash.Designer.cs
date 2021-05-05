@@ -113,6 +113,7 @@ namespace Latian_LKS_2
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Splash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Splash_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();
 

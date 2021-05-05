@@ -37,5 +37,10 @@ namespace Latian_LKS_2
             else
             { }
         }
+
+        private void Splash_Paint(object sender, PaintEventArgs e)
+        {
+            GradientModel.gradientColor(this.ClientRectangle, e);
+        }
     }
 }

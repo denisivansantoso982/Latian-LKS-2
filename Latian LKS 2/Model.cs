@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
 namespace Latian_LKS_2
 {
@@ -25,8 +27,17 @@ namespace Latian_LKS_2
 
     class ColourModel
     {
-        public static Color primary = Color.FromArgb(130, 5, 30);
+        //public static Color primary = Color.FromArgb(130, 5, 30);
+        //public static Color secondary = Color.FromArgb(181, 15, 30);
         public static Color glass = Color.FromArgb(30, Color.White);
+
+        // Flutter Theme
+        //public static Color primary = Color.FromArgb(4, 84, 164);
+        //public static Color secondary = Color.FromArgb(4, 124, 212);
+
+        // Assassin's Creed IV Theme
+        public static Color primary = Color.FromArgb(12, 44, 36);
+        public static Color secondary = Color.FromArgb(37, 82, 78);
     }
 
     class EncryptModel
@@ -40,6 +51,17 @@ namespace Latian_LKS_2
                 string result = Convert.ToBase64String(encryption);
 
                 return result;
+            }
+        }
+    }
+
+    class GradientModel
+    {
+        public static void gradientColor(Rectangle rectangle, PaintEventArgs e)
+        {
+            using (LinearGradientBrush brush = new LinearGradientBrush(rectangle, ColourModel.primary, ColourModel.secondary, 45F))
+            {
+                e.Graphics.FillRectangle(brush, rectangle);
             }
         }
     }

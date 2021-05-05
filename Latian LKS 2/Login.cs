@@ -100,5 +100,10 @@ namespace Latian_LKS_2
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void Login_Paint(object sender, PaintEventArgs e)
+        {
+            GradientModel.gradientColor(this.ClientRectangle, e);
+        }
     }
 }
