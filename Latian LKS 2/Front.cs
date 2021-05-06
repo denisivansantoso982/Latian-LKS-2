@@ -84,5 +84,10 @@ namespace Latian_LKS_2
             ReportCheckIn reportCheckIn = new ReportCheckIn();
             reportCheckIn.ShowDialog();
         }
+
+        private void Front_Paint(object sender, PaintEventArgs e)
+        {
+            GradientModel.gradientColor(this.ClientRectangle, e);
+        }
     }
 }

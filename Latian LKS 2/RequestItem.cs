@@ -96,6 +96,7 @@ namespace Latian_LKS_2
 
         private void RequestItem_Paint(object sender, PaintEventArgs e)
         {
+            GradientModel.gradientColor(this.ClientRectangle, e);
             ControlPaint.DrawBorder(e.Graphics, ClientRectangle, Color.White, ButtonBorderStyle.Solid);
         }
 

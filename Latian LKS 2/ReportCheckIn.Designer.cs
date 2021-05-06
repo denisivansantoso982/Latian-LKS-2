@@ -60,26 +60,23 @@ namespace Latian_LKS_2
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Nirmala UI Semilight", 24F);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(28, 31);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(37, 38);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(238, 45);
+            this.label3.Size = new System.Drawing.Size(299, 54);
             this.label3.TabIndex = 14;
             this.label3.Text = "Check In Report";
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkRed;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(82)))), ((int)(((byte)(78)))));
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(2, 2);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(3, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(26, 28);
+            this.button1.Size = new System.Drawing.Size(35, 34);
             this.button1.TabIndex = 13;
             this.button1.Text = "<";
             this.button1.UseVisualStyleBackColor = false;
@@ -90,11 +87,11 @@ namespace Latian_LKS_2
             this.comboBoxDate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxDate.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.comboBoxDate.Location = new System.Drawing.Point(155, 105);
-            this.comboBoxDate.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxDate.Location = new System.Drawing.Point(207, 129);
+            this.comboBoxDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxDate.MaxDropDownItems = 12;
             this.comboBoxDate.Name = "comboBoxDate";
-            this.comboBoxDate.Size = new System.Drawing.Size(250, 29);
+            this.comboBoxDate.Size = new System.Drawing.Size(332, 36);
             this.comboBoxDate.TabIndex = 84;
             this.comboBoxDate.SelectionChangeCommitted += new System.EventHandler(this.comboBoxDate_SelectionChangeCommitted);
             // 
@@ -103,10 +100,9 @@ namespace Latian_LKS_2
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(31, 110);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(41, 135);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 21);
+            this.label7.Size = new System.Drawing.Size(132, 28);
             this.label7.TabIndex = 83;
             this.label7.Text = "Choose range";
             // 
@@ -116,10 +112,10 @@ namespace Latian_LKS_2
             this.datePickerTo.CustomFormat = "dd MMMM yyyy";
             this.datePickerTo.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.datePickerTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.datePickerTo.Location = new System.Drawing.Point(398, 158);
-            this.datePickerTo.Margin = new System.Windows.Forms.Padding(2);
+            this.datePickerTo.Location = new System.Drawing.Point(531, 194);
+            this.datePickerTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datePickerTo.Name = "datePickerTo";
-            this.datePickerTo.Size = new System.Drawing.Size(190, 29);
+            this.datePickerTo.Size = new System.Drawing.Size(252, 34);
             this.datePickerTo.TabIndex = 82;
             this.datePickerTo.Visible = false;
             this.datePickerTo.ValueChanged += new System.EventHandler(this.datePickerFrom_ValueChanged);
@@ -129,10 +125,9 @@ namespace Latian_LKS_2
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(348, 158);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(464, 194);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 21);
+            this.label1.Size = new System.Drawing.Size(32, 28);
             this.label1.TabIndex = 81;
             this.label1.Text = "To";
             this.label1.Visible = false;
@@ -143,10 +138,10 @@ namespace Latian_LKS_2
             this.datePickerFrom.CustomFormat = "dd MMMM yyyy";
             this.datePickerFrom.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.datePickerFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.datePickerFrom.Location = new System.Drawing.Point(137, 158);
-            this.datePickerFrom.Margin = new System.Windows.Forms.Padding(2);
+            this.datePickerFrom.Location = new System.Drawing.Point(183, 194);
+            this.datePickerFrom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datePickerFrom.Name = "datePickerFrom";
-            this.datePickerFrom.Size = new System.Drawing.Size(190, 29);
+            this.datePickerFrom.Size = new System.Drawing.Size(252, 34);
             this.datePickerFrom.TabIndex = 80;
             this.datePickerFrom.Visible = false;
             this.datePickerFrom.ValueChanged += new System.EventHandler(this.datePickerFrom_ValueChanged);
@@ -156,10 +151,9 @@ namespace Latian_LKS_2
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(31, 158);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(41, 194);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 21);
+            this.label6.Size = new System.Drawing.Size(132, 28);
             this.label6.TabIndex = 79;
             this.label6.Text = "Check In from";
             this.label6.Visible = false;
@@ -175,12 +169,12 @@ namespace Latian_LKS_2
             legend1.IsTextAutoFit = false;
             legend1.Name = "Guest";
             this.chartReport.Legends.Add(legend1);
-            this.chartReport.Location = new System.Drawing.Point(37, 385);
-            this.chartReport.Margin = new System.Windows.Forms.Padding(2);
+            this.chartReport.Location = new System.Drawing.Point(49, 474);
+            this.chartReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartReport.Name = "chartReport";
             this.chartReport.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             series1.ChartArea = "ChartArea1";
-            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(82)))), ((int)(((byte)(78)))));
             series1.CustomProperties = "EmptyPointValue=Zero, LabelStyle=Bottom";
             series1.EmptyPointStyle.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
             series1.EmptyPointStyle.Color = System.Drawing.Color.Black;
@@ -194,7 +188,7 @@ namespace Latian_LKS_2
             series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Triangle;
             series1.Name = "Guest";
             this.chartReport.Series.Add(series1);
-            this.chartReport.Size = new System.Drawing.Size(826, 244);
+            this.chartReport.Size = new System.Drawing.Size(1101, 300);
             this.chartReport.TabIndex = 78;
             this.chartReport.Text = "Chart";
             // 
@@ -219,13 +213,13 @@ namespace Latian_LKS_2
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 11F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Maroon;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(82)))), ((int)(((byte)(78)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.gridGuest.DefaultCellStyle = dataGridViewCellStyle2;
             this.gridGuest.GridColor = System.Drawing.SystemColors.WindowFrame;
-            this.gridGuest.Location = new System.Drawing.Point(34, 202);
-            this.gridGuest.Margin = new System.Windows.Forms.Padding(2);
+            this.gridGuest.Location = new System.Drawing.Point(45, 249);
+            this.gridGuest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridGuest.Name = "gridGuest";
             this.gridGuest.ReadOnly = true;
             this.gridGuest.RowHeadersVisible = false;
@@ -233,27 +227,25 @@ namespace Latian_LKS_2
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Nirmala UI", 11F);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Maroon;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(82)))), ((int)(((byte)(78)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             this.gridGuest.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.gridGuest.RowTemplate.Height = 24;
             this.gridGuest.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridGuest.Size = new System.Drawing.Size(828, 160);
+            this.gridGuest.Size = new System.Drawing.Size(1104, 197);
             this.gridGuest.TabIndex = 94;
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.DarkRed;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(82)))), ((int)(((byte)(78)))));
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
-            this.button3.Location = new System.Drawing.Point(674, 157);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Location = new System.Drawing.Point(899, 193);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(92, 33);
+            this.button3.Size = new System.Drawing.Size(123, 41);
             this.button3.TabIndex = 96;
             this.button3.Text = "Print";
             this.button3.UseVisualStyleBackColor = false;
@@ -261,17 +253,15 @@ namespace Latian_LKS_2
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkRed;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(82)))), ((int)(((byte)(78)))));
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(770, 157);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(1027, 193);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 33);
+            this.button2.Size = new System.Drawing.Size(123, 41);
             this.button2.TabIndex = 95;
             this.button2.Text = "Export";
             this.button2.UseVisualStyleBackColor = false;
@@ -293,10 +283,10 @@ namespace Latian_LKS_2
             // 
             // ReportCheckIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(896, 685);
+            this.ClientSize = new System.Drawing.Size(1195, 843);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.gridGuest);
@@ -311,7 +301,7 @@ namespace Latian_LKS_2
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ReportCheckIn";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
