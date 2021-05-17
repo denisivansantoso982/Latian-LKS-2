@@ -27,6 +27,7 @@ namespace Latian_LKS_2
             panelRoomType.BackColor = ColourModel.glass;
 
             labelDate.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy");
+            button1.BackColor = ColourModel.primary;
         }
 
         private void button1_Click(object sender, EventArgs e)

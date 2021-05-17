@@ -22,7 +22,8 @@ namespace Latian_LKS_2
         {
             InitializeComponent();
             this.BackColor = ColourModel.primary;
-            panel.BackColor = ColourModel.glass;
+            button1.BackColor = ColourModel.primary;
+            button2.BackColor = ColourModel.primary;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

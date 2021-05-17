@@ -20,7 +20,8 @@ namespace Latian_LKS_2
         {
             InitializeComponent();
             loadDataGender();
-            this.BackColor = ColourModel.primary;
+            button1.BackColor = ColourModel.primary;
+            button2.BackColor = ColourModel.primary;
         }
 
         void loadDataGender()

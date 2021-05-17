@@ -33,7 +33,18 @@ namespace Latian_LKS_2
             countTotalPrice();
             dateTimePicker.MinDate = DateTime.Now;
             dateTimePicker1.MinDate = dateTimePicker.Value.AddDays(1);
-            this.BackColor = ColourModel.primary;
+            button1.BackColor = ColourModel.primary;
+            button2.BackColor = ColourModel.primary;
+            button3.BackColor = ColourModel.primary;
+            button4.BackColor = ColourModel.primary;
+            button5.BackColor = ColourModel.primary;
+            button6.BackColor = ColourModel.primary;
+            button7.BackColor = ColourModel.primary;
+
+            gridAvailable.RowsDefaultCellStyle.SelectionBackColor = ColourModel.primary;
+            gridSelected.RowsDefaultCellStyle.SelectionBackColor = ColourModel.primary;
+            gridCustomer.RowsDefaultCellStyle.SelectionBackColor = ColourModel.primary;
+            gridItem.RowsDefaultCellStyle.SelectionBackColor = ColourModel.primary;
         }
 
         void loadDataCustomer()

@@ -26,7 +26,12 @@ namespace Latian_LKS_2
             loadDataItem();
             loadGridItem();
             countTotalPrice();
-            this.BackColor = ColourModel.primary;
+            button1.BackColor = ColourModel.primary;
+            button2.BackColor = ColourModel.primary;
+            button5.BackColor = ColourModel.primary;
+            button6.BackColor = ColourModel.primary;
+
+            gridItem.RowsDefaultCellStyle.SelectionBackColor = ColourModel.primary;
         }
 
         void loadDataRoom()

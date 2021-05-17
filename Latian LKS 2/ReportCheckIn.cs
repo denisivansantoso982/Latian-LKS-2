@@ -27,7 +27,11 @@ namespace Latian_LKS_2
             loadComboBoxSelecTime();
             loadDataChart();
             loadGrid();
-            this.BackColor = ColourModel.primary;
+            button1.BackColor = ColourModel.primary;
+            button2.BackColor = ColourModel.primary;
+            button3.BackColor = ColourModel.primary;
+
+            gridGuest.RowsDefaultCellStyle.SelectionBackColor = ColourModel.primary;
         }
 
         void loadComboBoxSelecTime()
@@ -93,6 +97,7 @@ namespace Latian_LKS_2
                     {
                         string date = reader.GetDateTime(0).ToString("dd MMMM yyyy");
                         chartReport.Series[0].Points.AddXY(date, reader.GetInt32(1));
+                        chartReport.Series[0].Color = ColourModel.primary;
                     }
                     reader.Close();
                 }

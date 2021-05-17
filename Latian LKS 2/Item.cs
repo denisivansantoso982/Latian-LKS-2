@@ -23,7 +23,13 @@ namespace Latian_LKS_2
             InitializeComponent();
             hide();
             loadDataItem();
-            this.BackColor = ColourModel.primary;
+            button1.BackColor = ColourModel.primary;
+            button2.BackColor = ColourModel.primary;
+            button3.BackColor = ColourModel.primary;
+            button4.BackColor = ColourModel.primary;
+            button5.BackColor = ColourModel.primary;
+
+            gridItem.RowsDefaultCellStyle.SelectionBackColor = ColourModel.primary;
         }
 
         void show()

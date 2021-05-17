@@ -30,7 +30,14 @@ namespace Latian_LKS_2
             loadDataEmployee();
             hide();
             dateTimePicker.MaxDate = DateTime.Now;
-            this.BackColor = ColourModel.primary;
+            button1.BackColor = ColourModel.primary;
+            button2.BackColor = ColourModel.primary;
+            button3.BackColor = ColourModel.primary;
+            button4.BackColor = ColourModel.primary;
+            button5.BackColor = ColourModel.primary;
+            buttonBrowse.BackColor = ColourModel.primary;
+
+            gridEmployee.RowsDefaultCellStyle.SelectionBackColor = ColourModel.primary;
         }
 
         void show()

@@ -24,8 +24,14 @@ namespace Latian_LKS_2
             InitializeComponent();
             loadDataComboBox();
             loadDataRoom();
-            this.BackColor = ColourModel.primary;
             hide();
+            button1.BackColor = ColourModel.primary;
+            button2.BackColor = ColourModel.primary;
+            button3.BackColor = ColourModel.primary;
+            button4.BackColor = ColourModel.primary;
+            button5.BackColor = ColourModel.primary;
+
+            gridRoom.RowsDefaultCellStyle.SelectionBackColor = ColourModel.primary;
         }
 
         void show()

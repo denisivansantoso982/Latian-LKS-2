@@ -27,7 +27,11 @@ namespace Latian_LKS_2
             loadComboBoxSelecTime();
             loadDataChart();
             loadGrid();
-            this.BackColor = ColourModel.primary;
+            button1.BackColor = ColourModel.primary;
+            button2.BackColor = ColourModel.primary;
+            button3.BackColor = ColourModel.primary;
+
+            gridGuest.RowsDefaultCellStyle.SelectionBackColor = ColourModel.primary;
         }
 
         void loadComboBoxSelecTime()
@@ -55,6 +59,7 @@ namespace Latian_LKS_2
                     {
                         string date = reader.GetDateTime(0).ToString("dd MMMM yyyy");
                         chartReport.Series[0].Points.AddXY(date, reader.GetInt32(1));
+                        chartReport.Series[0].Color = ColourModel.primary;
                     }
                     reader.Close();
                 } else
@@ -156,9 +161,7 @@ namespace Latian_LKS_2
                     worksheet.Cells[i + 2, j + 1] = gridGuest.Rows[i].Cells[j].Value.ToString();
                 }
             }
-
-            worksheet.SaveAs("D:\\DENIS IVAN SANTOSO\\Project Example\\Desktop_Tutorial\\LKS\\Latian LKS 2\\Guest.xls", Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing);
-            workbook.Close(true, Type.Missing, Type.Missing);
+            
             app.Quit();
         }
 

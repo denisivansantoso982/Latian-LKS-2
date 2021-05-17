@@ -68,6 +68,7 @@ namespace Latian_LKS_2
             // 
             // panel
             // 
+            this.panel.BackColor = System.Drawing.Color.Transparent;
             this.panel.Controls.Add(this.checkBox1);
             this.panel.Controls.Add(this.button2);
             this.panel.Controls.Add(this.label4);
