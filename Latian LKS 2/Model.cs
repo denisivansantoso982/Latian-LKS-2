@@ -32,14 +32,18 @@ namespace Latian_LKS_2
         //public static Color secondary = Color.FromArgb(181, 15, 30);
 
         // Flutter Theme
-        public static Color primary = Color.FromArgb(4, 84, 164);
-        public static Color secondary = Color.FromArgb(4, 124, 212);
+        //public static Color primary = Color.FromArgb(4, 84, 164);
+        //public static Color secondary = Color.FromArgb(4, 124, 212);
 
         // Assassin's Creed IV Theme
         //public static Color primary = Color.FromArgb(12, 44, 36);
         //public static Color secondary = Color.FromArgb(37, 82, 78);
 
+        public static Color primary = Color.FromArgb(4, 84, 164);
+        public static Color secondary = Color.FromArgb(4, 124, 212);
+
         public static Color glass = Color.FromArgb(30, Color.White);
+        public static Color glassHover = Color.FromArgb(50, Color.White);
     }
 
     class EncryptModel

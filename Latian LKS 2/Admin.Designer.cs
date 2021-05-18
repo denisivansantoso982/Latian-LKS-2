@@ -53,22 +53,27 @@ namespace Latian_LKS_2
             this.panelEmployee = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.panelMaster = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.panelLogout.SuspendLayout();
             this.panelRoom.SuspendLayout();
             this.panelRoomType.SuspendLayout();
             this.panelFD.SuspendLayout();
             this.panelItem.SuspendLayout();
             this.panelEmployee.SuspendLayout();
+            this.panelMaster.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(82)))), ((int)(((byte)(78)))));
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1260, 5);
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(1264, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(35, 34);
@@ -79,6 +84,7 @@ namespace Latian_LKS_2
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Nirmala UI Semilight", 24F);
@@ -91,10 +97,11 @@ namespace Latian_LKS_2
             // 
             // labelName
             // 
+            this.labelName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelName.AutoSize = true;
             this.labelName.BackColor = System.Drawing.Color.Transparent;
             this.labelName.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.labelName.Location = new System.Drawing.Point(941, 46);
+            this.labelName.Location = new System.Drawing.Point(942, 46);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(64, 28);
             this.labelName.TabIndex = 9;
@@ -102,10 +109,11 @@ namespace Latian_LKS_2
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(941, 75);
+            this.label1.Location = new System.Drawing.Point(942, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 25);
             this.label1.TabIndex = 10;
@@ -113,6 +121,7 @@ namespace Latian_LKS_2
             // 
             // labelDate
             // 
+            this.labelDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelDate.AutoSize = true;
             this.labelDate.BackColor = System.Drawing.Color.Transparent;
             this.labelDate.Font = new System.Drawing.Font("Nirmala UI", 12F);
@@ -124,6 +133,7 @@ namespace Latian_LKS_2
             // 
             // panelLogout
             // 
+            this.panelLogout.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panelLogout.BackColor = System.Drawing.Color.Transparent;
             this.panelLogout.Controls.Add(this.label14);
             this.panelLogout.Controls.Add(this.label15);
@@ -134,17 +144,21 @@ namespace Latian_LKS_2
             this.panelLogout.Size = new System.Drawing.Size(131, 127);
             this.panelLogout.TabIndex = 18;
             this.panelLogout.Click += new System.EventHandler(this.panelLogout_Click);
+            this.panelLogout.MouseEnter += new System.EventHandler(this.panelLogout_MouseEnter);
+            this.panelLogout.MouseLeave += new System.EventHandler(this.panelLogout_MouseLeave);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(23, 76);
+            this.label14.Location = new System.Drawing.Point(26, 89);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(78, 28);
             this.label14.TabIndex = 16;
             this.label14.Text = "Logout";
             this.label14.Click += new System.EventHandler(this.panelLogout_Click);
+            this.label14.MouseEnter += new System.EventHandler(this.panelLogout_MouseEnter);
+            this.label14.MouseLeave += new System.EventHandler(this.panelLogout_MouseLeave);
             // 
             // label15
             // 
@@ -152,15 +166,21 @@ namespace Latian_LKS_2
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Wingdings 3", 34.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(19, 17);
+            this.label15.Location = new System.Drawing.Point(24, 7);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(81, 67);
             this.label15.TabIndex = 17;
             this.label15.Text = "";
             this.label15.Click += new System.EventHandler(this.panelLogout_Click);
+            this.label15.MouseEnter += new System.EventHandler(this.panelLogout_MouseEnter);
+            this.label15.MouseLeave += new System.EventHandler(this.panelLogout_MouseLeave);
             // 
             // panelRoom
             // 
+            this.panelRoom.AccessibleRole = System.Windows.Forms.AccessibleRole.Caret;
+            this.panelRoom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelRoom.AutoScroll = true;
+            this.panelRoom.AutoSize = true;
             this.panelRoom.Controls.Add(this.label12);
             this.panelRoom.Controls.Add(this.label13);
             this.panelRoom.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -170,9 +190,12 @@ namespace Latian_LKS_2
             this.panelRoom.Size = new System.Drawing.Size(255, 540);
             this.panelRoom.TabIndex = 28;
             this.panelRoom.Click += new System.EventHandler(this.panelRoom_Click);
+            this.panelRoom.MouseEnter += new System.EventHandler(this.panelRoom_MouseEnter);
+            this.panelRoom.MouseLeave += new System.EventHandler(this.panelRoom_MouseLeave);
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Nirmala UI", 12F);
@@ -182,9 +205,12 @@ namespace Latian_LKS_2
             this.label12.TabIndex = 22;
             this.label12.Text = "Room";
             this.label12.Click += new System.EventHandler(this.panelRoom_Click);
+            this.label12.MouseEnter += new System.EventHandler(this.panelRoom_MouseEnter);
+            this.label12.MouseLeave += new System.EventHandler(this.panelRoom_MouseLeave);
             // 
             // label13
             // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Webdings", 50F);
@@ -195,9 +221,15 @@ namespace Latian_LKS_2
             this.label13.TabIndex = 23;
             this.label13.Text = "";
             this.label13.Click += new System.EventHandler(this.panelRoom_Click);
+            this.label13.MouseEnter += new System.EventHandler(this.panelRoom_MouseEnter);
+            this.label13.MouseLeave += new System.EventHandler(this.panelRoom_MouseLeave);
             // 
             // panelRoomType
             // 
+            this.panelRoomType.AccessibleRole = System.Windows.Forms.AccessibleRole.Caret;
+            this.panelRoomType.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelRoomType.AutoScroll = true;
+            this.panelRoomType.AutoSize = true;
             this.panelRoomType.Controls.Add(this.label11);
             this.panelRoomType.Controls.Add(this.label10);
             this.panelRoomType.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -207,9 +239,12 @@ namespace Latian_LKS_2
             this.panelRoomType.Size = new System.Drawing.Size(255, 540);
             this.panelRoomType.TabIndex = 26;
             this.panelRoomType.Click += new System.EventHandler(this.panelRoomType_Click);
+            this.panelRoomType.MouseEnter += new System.EventHandler(this.panelRoomType_MouseEnter);
+            this.panelRoomType.MouseLeave += new System.EventHandler(this.panelRoomType_MouseLeave);
             // 
             // label11
             // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Nirmala UI", 12F);
@@ -219,9 +254,12 @@ namespace Latian_LKS_2
             this.label11.TabIndex = 21;
             this.label11.Text = "Room Type";
             this.label11.Click += new System.EventHandler(this.panelRoomType_Click);
+            this.label11.MouseEnter += new System.EventHandler(this.panelRoomType_MouseEnter);
+            this.label11.MouseLeave += new System.EventHandler(this.panelRoomType_MouseLeave);
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Webdings", 50F);
@@ -232,9 +270,15 @@ namespace Latian_LKS_2
             this.label10.TabIndex = 21;
             this.label10.Text = "";
             this.label10.Click += new System.EventHandler(this.panelRoomType_Click);
+            this.label10.MouseEnter += new System.EventHandler(this.panelRoomType_MouseEnter);
+            this.label10.MouseLeave += new System.EventHandler(this.panelRoomType_MouseLeave);
             // 
             // panelFD
             // 
+            this.panelFD.AccessibleRole = System.Windows.Forms.AccessibleRole.Caret;
+            this.panelFD.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelFD.AutoScroll = true;
+            this.panelFD.AutoSize = true;
             this.panelFD.Controls.Add(this.label9);
             this.panelFD.Controls.Add(this.label8);
             this.panelFD.Controls.Add(this.label7);
@@ -245,9 +289,12 @@ namespace Latian_LKS_2
             this.panelFD.Size = new System.Drawing.Size(541, 255);
             this.panelFD.TabIndex = 27;
             this.panelFD.Click += new System.EventHandler(this.panelFD_Click);
+            this.panelFD.MouseEnter += new System.EventHandler(this.panelFD_MouseEnter);
+            this.panelFD.MouseLeave += new System.EventHandler(this.panelFD_MouseLeave);
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Webdings", 50F);
@@ -258,9 +305,12 @@ namespace Latian_LKS_2
             this.label9.TabIndex = 20;
             this.label9.Text = "";
             this.label9.Click += new System.EventHandler(this.panelFD_Click);
+            this.label9.MouseEnter += new System.EventHandler(this.panelFD_MouseEnter);
+            this.label9.MouseLeave += new System.EventHandler(this.panelFD_MouseLeave);
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Webdings", 50F);
@@ -271,9 +321,12 @@ namespace Latian_LKS_2
             this.label8.TabIndex = 19;
             this.label8.Text = "";
             this.label8.Click += new System.EventHandler(this.panelFD_Click);
+            this.label8.MouseEnter += new System.EventHandler(this.panelFD_MouseEnter);
+            this.label8.MouseLeave += new System.EventHandler(this.panelFD_MouseLeave);
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Nirmala UI", 12F);
@@ -283,9 +336,15 @@ namespace Latian_LKS_2
             this.label7.TabIndex = 18;
             this.label7.Text = "Foods And Drinks";
             this.label7.Click += new System.EventHandler(this.panelFD_Click);
+            this.label7.MouseEnter += new System.EventHandler(this.panelFD_MouseEnter);
+            this.label7.MouseLeave += new System.EventHandler(this.panelFD_MouseLeave);
             // 
             // panelItem
             // 
+            this.panelItem.AccessibleRole = System.Windows.Forms.AccessibleRole.Caret;
+            this.panelItem.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelItem.AutoScroll = true;
+            this.panelItem.AutoSize = true;
             this.panelItem.Controls.Add(this.label5);
             this.panelItem.Controls.Add(this.label6);
             this.panelItem.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -295,9 +354,12 @@ namespace Latian_LKS_2
             this.panelItem.Size = new System.Drawing.Size(255, 255);
             this.panelItem.TabIndex = 25;
             this.panelItem.Click += new System.EventHandler(this.panelItem_Click);
+            this.panelItem.MouseEnter += new System.EventHandler(this.panelItem_MouseEnter);
+            this.panelItem.MouseLeave += new System.EventHandler(this.panelItem_MouseLeave);
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Nirmala UI", 12F);
@@ -307,9 +369,12 @@ namespace Latian_LKS_2
             this.label5.TabIndex = 16;
             this.label5.Text = "Item";
             this.label5.Click += new System.EventHandler(this.panelItem_Click);
+            this.label5.MouseEnter += new System.EventHandler(this.panelItem_MouseEnter);
+            this.label5.MouseLeave += new System.EventHandler(this.panelItem_MouseLeave);
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Webdings", 50F);
@@ -320,9 +385,15 @@ namespace Latian_LKS_2
             this.label6.TabIndex = 17;
             this.label6.Text = "";
             this.label6.Click += new System.EventHandler(this.panelItem_Click);
+            this.label6.MouseEnter += new System.EventHandler(this.panelItem_MouseEnter);
+            this.label6.MouseLeave += new System.EventHandler(this.panelItem_MouseLeave);
             // 
             // panelEmployee
             // 
+            this.panelEmployee.AccessibleRole = System.Windows.Forms.AccessibleRole.Caret;
+            this.panelEmployee.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelEmployee.AutoScroll = true;
+            this.panelEmployee.AutoSize = true;
             this.panelEmployee.Controls.Add(this.label4);
             this.panelEmployee.Controls.Add(this.label2);
             this.panelEmployee.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -332,9 +403,12 @@ namespace Latian_LKS_2
             this.panelEmployee.Size = new System.Drawing.Size(255, 255);
             this.panelEmployee.TabIndex = 24;
             this.panelEmployee.Click += new System.EventHandler(this.panelEmployee_Click);
+            this.panelEmployee.MouseEnter += new System.EventHandler(this.panelEmployee_MouseEnter);
+            this.panelEmployee.MouseLeave += new System.EventHandler(this.panelEmployee_MouseLeave);
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F);
@@ -344,9 +418,12 @@ namespace Latian_LKS_2
             this.label4.TabIndex = 15;
             this.label4.Text = "Employee";
             this.label4.Click += new System.EventHandler(this.panelEmployee_Click);
+            this.label4.MouseEnter += new System.EventHandler(this.panelEmployee_MouseEnter);
+            this.label4.MouseLeave += new System.EventHandler(this.panelEmployee_MouseLeave);
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Webdings", 50F);
@@ -357,6 +434,52 @@ namespace Latian_LKS_2
             this.label2.TabIndex = 15;
             this.label2.Text = "";
             this.label2.Click += new System.EventHandler(this.panelEmployee_Click);
+            this.label2.MouseEnter += new System.EventHandler(this.panelEmployee_MouseEnter);
+            this.label2.MouseLeave += new System.EventHandler(this.panelEmployee_MouseLeave);
+            // 
+            // panelMaster
+            // 
+            this.panelMaster.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelMaster.BackColor = System.Drawing.Color.Transparent;
+            this.panelMaster.Controls.Add(this.label16);
+            this.panelMaster.Controls.Add(this.label19);
+            this.panelMaster.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelMaster.Location = new System.Drawing.Point(781, 743);
+            this.panelMaster.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelMaster.Name = "panelMaster";
+            this.panelMaster.Size = new System.Drawing.Size(131, 127);
+            this.panelMaster.TabIndex = 29;
+            this.panelMaster.Click += new System.EventHandler(this.panelMaster_Click);
+            this.panelMaster.MouseEnter += new System.EventHandler(this.panelMaster_MouseEnter);
+            this.panelMaster.MouseLeave += new System.EventHandler(this.panelMaster_MouseLeave);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label16.Location = new System.Drawing.Point(5, 89);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(121, 28);
+            this.label16.TabIndex = 16;
+            this.label16.Text = "Transaction";
+            this.label16.Click += new System.EventHandler(this.panelMaster_Click);
+            this.label16.MouseEnter += new System.EventHandler(this.panelMaster_MouseEnter);
+            this.label16.MouseLeave += new System.EventHandler(this.panelMaster_MouseLeave);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Webdings", 34.8F);
+            this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label19.Location = new System.Drawing.Point(23, 7);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(83, 59);
+            this.label19.TabIndex = 17;
+            this.label19.Text = "ª";
+            this.label19.Click += new System.EventHandler(this.panelMaster_Click);
+            this.label19.MouseEnter += new System.EventHandler(this.panelMaster_MouseEnter);
+            this.label19.MouseLeave += new System.EventHandler(this.panelMaster_MouseLeave);
             // 
             // Admin
             // 
@@ -364,6 +487,7 @@ namespace Latian_LKS_2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1299, 940);
+            this.Controls.Add(this.panelMaster);
             this.Controls.Add(this.panelRoom);
             this.Controls.Add(this.panelLogout);
             this.Controls.Add(this.panelRoomType);
@@ -381,6 +505,7 @@ namespace Latian_LKS_2
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Admin_Paint);
             this.panelLogout.ResumeLayout(false);
             this.panelLogout.PerformLayout();
@@ -394,6 +519,8 @@ namespace Latian_LKS_2
             this.panelItem.PerformLayout();
             this.panelEmployee.ResumeLayout(false);
             this.panelEmployee.PerformLayout();
+            this.panelMaster.ResumeLayout(false);
+            this.panelMaster.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -425,5 +552,8 @@ namespace Latian_LKS_2
         private System.Windows.Forms.Panel panelEmployee;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panelMaster;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label19;
     }
 }

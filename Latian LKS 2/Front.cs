@@ -29,6 +29,17 @@ namespace Latian_LKS_2
 
             labelDate.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy");
             button1.BackColor = ColourModel.primary;
+
+            if (EmployeeModel.JobID == 1)
+            {
+                panelMaster.Visible = true;
+                label1.Text = "Admin";
+            }
+            else
+            {
+                panelMaster.Visible = false;
+                label1.Text = "Front Officer";
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -89,6 +100,95 @@ namespace Latian_LKS_2
         private void Front_Paint(object sender, PaintEventArgs e)
         {
             GradientModel.gradientColor(this.ClientRectangle, e);
+        }
+
+        private void panelReservation_MouseEnter(object sender, EventArgs e)
+        {
+            panelReservation.BackColor = ColourModel.glassHover;
+        }
+
+        private void panelReservation_MouseLeave(object sender, EventArgs e)
+        {
+            panelReservation.BackColor = ColourModel.glass;
+        }
+
+        private void panelCheckIn_MouseEnter(object sender, EventArgs e)
+        {
+            panelCheckIn.BackColor = ColourModel.glassHover;
+        }
+
+        private void panelCheckIn_MouseLeave(object sender, EventArgs e)
+        {
+            panelCheckIn.BackColor = ColourModel.glass;
+        }
+
+        private void panelRequest_MouseEnter(object sender, EventArgs e)
+        {
+            panelRequest.BackColor = ColourModel.glassHover;
+        }
+
+        private void panelRequest_MouseLeave(object sender, EventArgs e)
+        {
+            panelRequest.BackColor = ColourModel.glass;
+        }
+
+        private void panelCheckOut_MouseEnter(object sender, EventArgs e)
+        {
+            panelCheckOut.BackColor = ColourModel.glassHover;
+        }
+
+        private void panelCheckOut_MouseLeave(object sender, EventArgs e)
+        {
+            panelCheckOut.BackColor = ColourModel.glass;
+        }
+
+        private void panelReportGuest_MouseEnter(object sender, EventArgs e)
+        {
+            panelReportGuest.BackColor = ColourModel.glassHover;
+        }
+
+        private void panelReportGuest_MouseLeave(object sender, EventArgs e)
+        {
+            panelReportGuest.BackColor = ColourModel.glass;
+        }
+
+        private void panelReportCheckIn_MouseEnter(object sender, EventArgs e)
+        {
+            panelReportCheckIn.BackColor = ColourModel.glassHover;
+        }
+
+        private void panelReportCheckIn_MouseLeave(object sender, EventArgs e)
+        {
+            panelReportCheckIn.BackColor = ColourModel.glass;
+        }
+
+        private void panelLogout_MouseEnter(object sender, EventArgs e)
+        {
+            panelLogout.BackColor = ColourModel.glassHover;
+            label14.BackColor = Color.Transparent;
+        }
+
+        private void panelLogout_MouseLeave(object sender, EventArgs e)
+        {
+            panelLogout.BackColor = Color.Transparent;
+        }
+
+        private void panelMaster_Click(object sender, EventArgs e)
+        {
+            Admin admin = new Admin();
+            admin.ShowDialog();
+            this.Close();
+        }
+
+        private void panelMaster_MouseEnter(object sender, EventArgs e)
+        {
+            panelMaster.BackColor = ColourModel.glassHover;
+            label13.BackColor = Color.Transparent;
+        }
+
+        private void panelMaster_MouseLeave(object sender, EventArgs e)
+        {
+            panelMaster.BackColor = Color.Transparent;
         }
     }
 }

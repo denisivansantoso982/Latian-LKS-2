@@ -83,5 +83,84 @@ namespace Latian_LKS_2
         {
             GradientModel.gradientColor(this.ClientRectangle, e);
         }
+
+        private void panelEmployee_MouseLeave(object sender, EventArgs e)
+        {
+            panelEmployee.BackColor = ColourModel.glass;
+        }
+
+        private void panelEmployee_MouseEnter(object sender, EventArgs e)
+        {
+            panelEmployee.BackColor = ColourModel.glassHover;
+        }
+
+        private void panelItem_MouseLeave(object sender, EventArgs e)
+        {
+            panelItem.BackColor = ColourModel.glass;
+        }
+
+        private void panelItem_MouseEnter(object sender, EventArgs e)
+        {
+            panelItem.BackColor = ColourModel.glassHover;
+        }
+
+        private void panelFD_MouseEnter(object sender, EventArgs e)
+        {
+            panelFD.BackColor = ColourModel.glassHover;
+        }
+
+        private void panelFD_MouseLeave(object sender, EventArgs e)
+        {
+            panelFD.BackColor = ColourModel.glass;
+        }
+
+        private void panelRoomType_MouseEnter(object sender, EventArgs e)
+        {
+            panelRoomType.BackColor = ColourModel.glassHover;
+        }
+
+        private void panelRoomType_MouseLeave(object sender, EventArgs e)
+        {
+            panelRoomType.BackColor = ColourModel.glass;
+        }
+
+        private void panelRoom_MouseEnter(object sender, EventArgs e)
+        {
+            panelRoom.BackColor = ColourModel.glassHover;
+        }
+
+        private void panelRoom_MouseLeave(object sender, EventArgs e)
+        {
+            panelRoom.BackColor = ColourModel.glass;
+        }
+
+        private void panelLogout_MouseEnter(object sender, EventArgs e)
+        {
+            panelLogout.BackColor = ColourModel.glassHover;
+            label14.BackColor = Color.Transparent;
+        }
+
+        private void panelLogout_MouseLeave(object sender, EventArgs e)
+        {
+            panelLogout.BackColor = Color.Transparent;
+        }
+
+        private void panelMaster_Click(object sender, EventArgs e)
+        {
+            Front front = new Front();
+            front.ShowDialog();
+            this.Close();
+        }
+
+        private void panelMaster_MouseEnter(object sender, EventArgs e)
+        {
+            panelMaster.BackColor = ColourModel.glassHover;
+            label16.BackColor = Color.Transparent;
+        }
+
+        private void panelMaster_MouseLeave(object sender, EventArgs e)
+        {
+            panelMaster.BackColor = Color.Transparent;
+        }
     }
 }
