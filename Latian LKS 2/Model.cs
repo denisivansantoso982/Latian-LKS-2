@@ -39,8 +39,9 @@ namespace Latian_LKS_2
         //public static Color primary = Color.FromArgb(12, 44, 36);
         //public static Color secondary = Color.FromArgb(37, 82, 78);
 
-        public static Color primary = Color.FromArgb(4, 84, 164);
-        public static Color secondary = Color.FromArgb(4, 124, 212);
+        public static Color primary = Color.FromArgb(4, 50, 110);
+        public static Color secondary = Color.FromArgb(31, 90, 209);
+        public static Color secondaryMain = Color.FromArgb(47, 105, 222);
 
         public static Color glass = Color.FromArgb(30, Color.White);
         public static Color glassHover = Color.FromArgb(50, Color.White);
@@ -65,7 +66,15 @@ namespace Latian_LKS_2
     {
         public static void gradientColor(Rectangle rectangle, PaintEventArgs e)
         {
-            using (LinearGradientBrush brush = new LinearGradientBrush(rectangle, ColourModel.primary, ColourModel.secondary, 45F))
+            using (LinearGradientBrush brush = new LinearGradientBrush(rectangle, ColourModel.primary, ColourModel.secondary, 60F))
+            {
+                e.Graphics.FillRectangle(brush, rectangle);
+            }
+        }
+
+        public static void gradientColorForMain(Rectangle rectangle, PaintEventArgs e)
+        {
+            using (LinearGradientBrush brush = new LinearGradientBrush(rectangle, ColourModel.primary, ColourModel.secondaryMain, 60F))
             {
                 e.Graphics.FillRectangle(brush, rectangle);
             }

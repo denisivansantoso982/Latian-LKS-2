@@ -81,7 +81,7 @@ namespace Latian_LKS_2
 
         private void Admin_Paint(object sender, PaintEventArgs e)
         {
-            GradientModel.gradientColor(this.ClientRectangle, e);
+            GradientModel.gradientColorForMain(this.ClientRectangle, e);
         }
 
         private void panelEmployee_MouseLeave(object sender, EventArgs e)
@@ -148,6 +148,7 @@ namespace Latian_LKS_2
         private void panelMaster_Click(object sender, EventArgs e)
         {
             Front front = new Front();
+            front.ShowInTaskbar = false;
             front.ShowDialog();
             this.Close();
         }

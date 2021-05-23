@@ -73,10 +73,10 @@ namespace Latian_LKS_2
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(1264, 0);
+            this.button1.Location = new System.Drawing.Point(1246, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(35, 34);
+            this.button1.Size = new System.Drawing.Size(50, 34);
             this.button1.TabIndex = 8;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = false;

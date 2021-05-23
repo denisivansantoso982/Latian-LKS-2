@@ -77,7 +77,7 @@ namespace Latian_LKS_2
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Nirmala UI Semilight", 24F);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(75, 44);
+            this.label3.Location = new System.Drawing.Point(75, 55);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(210, 54);
             this.label3.TabIndex = 4;
@@ -91,10 +91,10 @@ namespace Latian_LKS_2
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(1261, 2);
+            this.button1.Location = new System.Drawing.Point(1246, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(35, 34);
+            this.button1.Size = new System.Drawing.Size(50, 34);
             this.button1.TabIndex = 6;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = false;
@@ -106,7 +106,7 @@ namespace Latian_LKS_2
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(943, 73);
+            this.label1.Location = new System.Drawing.Point(943, 84);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 25);
             this.label1.TabIndex = 12;
@@ -118,7 +118,7 @@ namespace Latian_LKS_2
             this.labelName.AutoSize = true;
             this.labelName.BackColor = System.Drawing.Color.Transparent;
             this.labelName.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.labelName.Location = new System.Drawing.Point(943, 44);
+            this.labelName.Location = new System.Drawing.Point(943, 55);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(64, 28);
             this.labelName.TabIndex = 11;
@@ -131,7 +131,7 @@ namespace Latian_LKS_2
             this.panelLogout.Controls.Add(this.label14);
             this.panelLogout.Controls.Add(this.label15);
             this.panelLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelLogout.Location = new System.Drawing.Point(1073, 743);
+            this.panelLogout.Location = new System.Drawing.Point(1072, 743);
             this.panelLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelLogout.Name = "panelLogout";
             this.panelLogout.Size = new System.Drawing.Size(131, 127);
@@ -174,7 +174,7 @@ namespace Latian_LKS_2
             this.labelDate.AutoSize = true;
             this.labelDate.BackColor = System.Drawing.Color.Transparent;
             this.labelDate.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.labelDate.Location = new System.Drawing.Point(79, 793);
+            this.labelDate.Location = new System.Drawing.Point(77, 791);
             this.labelDate.Name = "labelDate";
             this.labelDate.Size = new System.Drawing.Size(53, 28);
             this.labelDate.TabIndex = 24;
@@ -215,7 +215,7 @@ namespace Latian_LKS_2
             this.panelRequest.Controls.Add(this.label8);
             this.panelRequest.Controls.Add(this.labelRequest);
             this.panelRequest.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelRequest.Location = new System.Drawing.Point(84, 470);
+            this.panelRequest.Location = new System.Drawing.Point(84, 459);
             this.panelRequest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelRequest.Name = "panelRequest";
             this.panelRequest.Size = new System.Drawing.Size(255, 255);
@@ -245,7 +245,7 @@ namespace Latian_LKS_2
             this.panelReportCheckIn.Controls.Add(this.label12);
             this.panelReportCheckIn.Controls.Add(this.label18);
             this.panelReportCheckIn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelReportCheckIn.Location = new System.Drawing.Point(948, 185);
+            this.panelReportCheckIn.Location = new System.Drawing.Point(948, 174);
             this.panelReportCheckIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelReportCheckIn.Name = "panelReportCheckIn";
             this.panelReportCheckIn.Size = new System.Drawing.Size(255, 540);
@@ -320,7 +320,7 @@ namespace Latian_LKS_2
             this.panelReportGuest.Controls.Add(this.label11);
             this.panelReportGuest.Controls.Add(this.label10);
             this.panelReportGuest.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelReportGuest.Location = new System.Drawing.Point(659, 185);
+            this.panelReportGuest.Location = new System.Drawing.Point(659, 174);
             this.panelReportGuest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelReportGuest.Name = "panelReportGuest";
             this.panelReportGuest.Size = new System.Drawing.Size(255, 540);
@@ -379,7 +379,7 @@ namespace Latian_LKS_2
             this.panelCheckIn.Controls.Add(this.label5);
             this.panelCheckIn.Controls.Add(this.label6);
             this.panelCheckIn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelCheckIn.Location = new System.Drawing.Point(371, 185);
+            this.panelCheckIn.Location = new System.Drawing.Point(371, 174);
             this.panelCheckIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelCheckIn.Name = "panelCheckIn";
             this.panelCheckIn.Size = new System.Drawing.Size(255, 255);
@@ -423,7 +423,7 @@ namespace Latian_LKS_2
             this.panelReservation.Controls.Add(this.label4);
             this.panelReservation.Controls.Add(this.label2);
             this.panelReservation.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelReservation.Location = new System.Drawing.Point(84, 185);
+            this.panelReservation.Location = new System.Drawing.Point(83, 174);
             this.panelReservation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelReservation.Name = "panelReservation";
             this.panelReservation.Size = new System.Drawing.Size(255, 255);
@@ -438,7 +438,7 @@ namespace Latian_LKS_2
             this.panelCheckOut.Controls.Add(this.label9);
             this.panelCheckOut.Controls.Add(this.label16);
             this.panelCheckOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelCheckOut.Location = new System.Drawing.Point(371, 470);
+            this.panelCheckOut.Location = new System.Drawing.Point(371, 459);
             this.panelCheckOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelCheckOut.Name = "panelCheckOut";
             this.panelCheckOut.Size = new System.Drawing.Size(255, 255);
@@ -483,7 +483,7 @@ namespace Latian_LKS_2
             this.panelMaster.Controls.Add(this.label13);
             this.panelMaster.Controls.Add(this.label19);
             this.panelMaster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelMaster.Location = new System.Drawing.Point(783, 743);
+            this.panelMaster.Location = new System.Drawing.Point(781, 743);
             this.panelMaster.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMaster.Name = "panelMaster";
             this.panelMaster.Size = new System.Drawing.Size(131, 127);
@@ -525,7 +525,7 @@ namespace Latian_LKS_2
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1299, 919);
+            this.ClientSize = new System.Drawing.Size(1299, 940);
             this.Controls.Add(this.panelMaster);
             this.Controls.Add(this.panelCheckOut);
             this.Controls.Add(this.panelLogout);

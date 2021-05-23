@@ -76,16 +76,20 @@ namespace Latian_LKS_2
                     {
                         EmployeeModel.Photo = Convert.ToString(reader["Photo"]);
                         EmployeeModel.PhotoImage = (byte[]) reader["PhotoImage"];
-                    } 
+                    }
+
+                    Admin admin = new Admin();
+                    Front front = new Front();
 
                     if (EmployeeModel.JobID == 1 )
                     {
-                        Admin admin = new Admin();
+                        front.ShowInTaskbar = false;
+                        front.Show();
                         admin.Show();
+                        admin.BringToFront();
                         this.Close();
                     } else
                     {
-                        Front front = new Front();
                         front.Show();
                         this.Close();
                     }
@@ -103,7 +107,7 @@ namespace Latian_LKS_2
 
         private void Login_Paint(object sender, PaintEventArgs e)
         {
-            GradientModel.gradientColor(this.ClientRectangle, e);
+            GradientModel.gradientColorForMain(this.ClientRectangle, e);
         }
     }
 }
