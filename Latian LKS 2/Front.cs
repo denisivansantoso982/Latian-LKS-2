@@ -177,6 +177,7 @@ namespace Latian_LKS_2
         {
             Admin admin = new Admin();
             admin.Show();
+            admin.ShowInTaskbar = false;
         }
 
         private void panelMaster_MouseEnter(object sender, EventArgs e)
