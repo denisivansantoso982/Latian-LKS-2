@@ -77,7 +77,7 @@ namespace Latian_LKS_2
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Nirmala UI Semilight", 24F);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(75, 55);
+            this.label3.Location = new System.Drawing.Point(75, 46);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(210, 54);
             this.label3.TabIndex = 4;
@@ -106,7 +106,7 @@ namespace Latian_LKS_2
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(943, 84);
+            this.label1.Location = new System.Drawing.Point(942, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 25);
             this.label1.TabIndex = 12;
@@ -118,7 +118,7 @@ namespace Latian_LKS_2
             this.labelName.AutoSize = true;
             this.labelName.BackColor = System.Drawing.Color.Transparent;
             this.labelName.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.labelName.Location = new System.Drawing.Point(943, 55);
+            this.labelName.Location = new System.Drawing.Point(943, 46);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(64, 28);
             this.labelName.TabIndex = 11;

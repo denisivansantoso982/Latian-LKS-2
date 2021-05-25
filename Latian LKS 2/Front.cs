@@ -53,6 +53,12 @@ namespace Latian_LKS_2
 
             if ( dialog == DialogResult.Yes )
             {
+                if (EmployeeModel.JobID == 1)
+                {
+                    Form admin = new Admin();
+                    Application.OpenForms[admin.Name].Close();
+                }
+
                 this.Close();
                 Login login = new Login();
                 login.Show();
@@ -175,9 +181,9 @@ namespace Latian_LKS_2
 
         private void panelMaster_Click(object sender, EventArgs e)
         {
-            Admin admin = new Admin();
-            admin.Show();
-            admin.ShowInTaskbar = false;
+            Form admin = new Admin();
+            admin.Activate();
+            Application.OpenForms[admin.Name].Focus();
         }
 
         private void panelMaster_MouseEnter(object sender, EventArgs e)

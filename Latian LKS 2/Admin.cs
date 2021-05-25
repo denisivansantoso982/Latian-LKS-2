@@ -41,6 +41,12 @@ namespace Latian_LKS_2
 
             if ( dialog == DialogResult.Yes )
             {
+                if (EmployeeModel.JobID == 1)
+                {
+                    Front front = new Front();
+                    Application.OpenForms[front.Name].Close();
+                }
+
                 this.Close();
                 Login login = new Login();
                 login.Show();
@@ -147,10 +153,10 @@ namespace Latian_LKS_2
 
         private void panelMaster_Click(object sender, EventArgs e)
         {
-            Front front = new Front();
+            Form front = new Front();
             front.ShowInTaskbar = false;
-            front.ShowDialog();
-            this.Close();
+            front.Activate();
+            Application.OpenForms[front.Name].Focus();
         }
 
         private void panelMaster_MouseEnter(object sender, EventArgs e)

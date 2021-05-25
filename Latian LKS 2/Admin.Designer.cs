@@ -29,7 +29,6 @@ namespace Latian_LKS_2
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,6 +55,7 @@ namespace Latian_LKS_2
             this.panelMaster = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelLogout.SuspendLayout();
             this.panelRoom.SuspendLayout();
             this.panelRoomType.SuspendLayout();
@@ -64,23 +64,6 @@ namespace Latian_LKS_2
             this.panelEmployee.SuspendLayout();
             this.panelMaster.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(1246, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 34);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -151,7 +134,7 @@ namespace Latian_LKS_2
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(26, 89);
+            this.label14.Location = new System.Drawing.Point(27, 91);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(78, 28);
             this.label14.TabIndex = 16;
@@ -166,7 +149,7 @@ namespace Latian_LKS_2
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Wingdings 3", 34.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(24, 7);
+            this.label15.Location = new System.Drawing.Point(23, 7);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(81, 67);
             this.label15.TabIndex = 17;
@@ -184,7 +167,7 @@ namespace Latian_LKS_2
             this.panelRoom.Controls.Add(this.label12);
             this.panelRoom.Controls.Add(this.label13);
             this.panelRoom.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelRoom.Location = new System.Drawing.Point(947, 175);
+            this.panelRoom.Location = new System.Drawing.Point(947, 174);
             this.panelRoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelRoom.Name = "panelRoom";
             this.panelRoom.Size = new System.Drawing.Size(255, 540);
@@ -233,7 +216,7 @@ namespace Latian_LKS_2
             this.panelRoomType.Controls.Add(this.label11);
             this.panelRoomType.Controls.Add(this.label10);
             this.panelRoomType.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelRoomType.Location = new System.Drawing.Point(657, 175);
+            this.panelRoomType.Location = new System.Drawing.Point(657, 174);
             this.panelRoomType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelRoomType.Name = "panelRoomType";
             this.panelRoomType.Size = new System.Drawing.Size(255, 540);
@@ -283,7 +266,7 @@ namespace Latian_LKS_2
             this.panelFD.Controls.Add(this.label8);
             this.panelFD.Controls.Add(this.label7);
             this.panelFD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelFD.Location = new System.Drawing.Point(83, 460);
+            this.panelFD.Location = new System.Drawing.Point(83, 459);
             this.panelFD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelFD.Name = "panelFD";
             this.panelFD.Size = new System.Drawing.Size(541, 255);
@@ -348,7 +331,7 @@ namespace Latian_LKS_2
             this.panelItem.Controls.Add(this.label5);
             this.panelItem.Controls.Add(this.label6);
             this.panelItem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelItem.Location = new System.Drawing.Point(371, 175);
+            this.panelItem.Location = new System.Drawing.Point(371, 174);
             this.panelItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelItem.Name = "panelItem";
             this.panelItem.Size = new System.Drawing.Size(255, 255);
@@ -481,6 +464,23 @@ namespace Latian_LKS_2
             this.label19.MouseEnter += new System.EventHandler(this.panelMaster_MouseEnter);
             this.label19.MouseLeave += new System.EventHandler(this.panelMaster_MouseLeave);
             // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(1246, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(50, 34);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -527,8 +527,6 @@ namespace Latian_LKS_2
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Label label1;
@@ -555,5 +553,6 @@ namespace Latian_LKS_2
         private System.Windows.Forms.Panel panelMaster;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button button1;
     }
 }
